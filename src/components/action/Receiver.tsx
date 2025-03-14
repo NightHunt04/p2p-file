@@ -91,7 +91,7 @@ export default function Action({ peerId, peerRef }: ActionProps) {
                         </FadeContent>
                         <div className="w-56 md:w-64 bg-white mt-12 md:mt-16 flex items-center justify-center rounded-lg p-2">
                             <QRCode 
-                                value={`http://localhost:5173/send/${peerId}`}
+                                value={`https://p2p-file.vercel.app/send/${peerId}`}
                                 style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                                 size={256}
                                 viewBox="0 0 256 256"
