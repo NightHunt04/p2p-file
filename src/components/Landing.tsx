@@ -15,26 +15,26 @@ export default function Landing({ peerId }: LandingProps) {
         if (peerId) navigate(`/receive/${peerId}`)
     }
   return (
-    <div className="flex items-center min-h-screen justify-center select-none h-full w-full">
-        <div className="relative w-[80%] md:w-[60%] lg:w-[35%] flex items-start justify-center">
-            <img src="/assets/main.png" className="w-full h-full shadow-xl brightness-75 animate-hover-img" alt="" />
-            <div className="absolute -top-6 md:-top-10 z-20 w-[100vw] flex flex-col items-center justify-center">
+    <div className="flex items-start min-h-screen justify-center select-none h-full w-full">
+        <div className="relative w-[80%] mt-20 h-[80vh] md:h-auto md:w-[60%] lg:w-[35%] flex items-center justify-center">
+            <img src="/assets/main.png" className="w-full h-full object-cover rounded-xl md:rounded-none shadow-xl brightness-75 animate-hover-img" alt="" />
+            <div className="absolute top-24 md:-top-10 z-20 w-[100vw] flex flex-col items-center justify-center">
                 <BlurText
                     delay={150}
                     animateBy="words"
                     direction="bottom"
-                    className="text-5xl md:text-9xl font-extrabold"
+                    className="text-6xl md:text-9xl font-extrabold"
                     text="Peer2peer" />
                 <BlurText
                     delay={120}
                     animateBy="words"
                     direction="bottom"
-                    className="text-5xl md:text-9xl font-extrabold -mt-1 md:-mt-3"
+                    className="text-6xl md:text-9xl font-extrabold -mt-1 md:-mt-3"
                     text="File Transfer" />
-                <FadeContent blur={true} className="w-[90%] md:w-[80%]" duration={1000} easing="ease-in-out" initialOpacity={0}>
+                <FadeContent blur={true} className="w-[80%] md:w-[80%]" duration={1000} easing="ease-in-out" initialOpacity={0}>
                     <p className="text-center text-sm w-full md:text-md font-medium mt-3 md:mt-5">Effortless File Transfers, No Middleman – Just You and Your Peers!</p>
                 </FadeContent>
-                <button onClick={handleReceive} className="hover:cursor-pointer hover:scale-105 transition-all px-3 py-2 rounded-3xl mt-52 border border-[#8a8a8a] shadow-lg bg-[#131313]">
+                <button onClick={handleReceive} className="hover:cursor-pointer hover:scale-105 transition-all px-3 py-2 rounded-3xl mt-80 md:mt-52 border border-[#8a8a8a] shadow-lg bg-[#131313]">
                     <ShinyText
                         text="Receive now"
                         speed={5}
