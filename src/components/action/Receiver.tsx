@@ -29,7 +29,7 @@ export default function Action({ peerId, peerRef }: ActionProps) {
     const [receivedFiles, setReceivedFiles] = useState<ReceivedFile[]>([])
     const copyTimeout = useRef<ReturnType<typeof setTimeout> | null>(null)
     const handleCopyLink = () => {
-        window.navigator.clipboard.writeText(`http://localhost:5173/send/${peerId}`)
+        window.navigator.clipboard.writeText(`https://p2p-file.vercel.app/send/${peerId}`)
         setCopied(true)
         if (copyTimeout.current) 
             clearTimeout(copyTimeout.current)
