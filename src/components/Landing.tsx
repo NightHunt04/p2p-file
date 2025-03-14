@@ -16,7 +16,7 @@ export default function Landing({ peerId }: LandingProps) {
     }
   return (
     <div className="flex items-center min-h-screen justify-center select-none h-full w-full">
-        <div className="relative w-[80%] md:w-[60%] lg:w-[35%] flex items-center justify-center">
+        <div className="relative w-[80%] md:w-[60%] lg:w-[35%] flex items-start justify-center">
             <img src="/assets/main.png" className="w-full h-full shadow-xl brightness-75 animate-hover-img" alt="" />
             <div className="absolute -top-6 md:-top-10 z-20 w-[100vw] flex flex-col items-center justify-center">
                 <BlurText
