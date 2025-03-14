@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", "sans-serif";
+  --animate-shine: shine 5s linear infinite;
+  --animate-hover-img: hover-img 5s ease-in-out infinite alternate;
+
+  @keyframes shine {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+
+  @keyframes hover-img {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+}
